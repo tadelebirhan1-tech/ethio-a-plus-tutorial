@@ -1,62 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ethio A+ Tutorial — study materials, PDF books, video lessons, practice questions and useful study tips.">
-  <title>Ethio A+ Tutorial</title>
-  <style>
-    :root{--navy:#082c78;--blue:#1457c5;--gold:#ffca28;--ink:#15264a;--muted:#5c6880;--paper:#f4f8ff}
-    *{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55}
-    header{background:linear-gradient(125deg,#06245f,#1769cf);color:white;padding:22px 6%;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
-    .brand{font-size:1.55rem;font-weight:800;letter-spacing:.2px}.brand span{color:var(--gold)}
-    nav{display:flex;gap:18px;flex-wrap:wrap}nav a{color:white;text-decoration:none;font-weight:700;font-size:.95rem}
-    .hero{padding:62px 6% 54px;background:linear-gradient(135deg,#eaf3ff,#fff);text-align:center}
-    .hero h1{font-size:clamp(2.2rem,6vw,4rem);line-height:1.08;margin:0 0 16px;color:var(--navy)}
-    .hero h1 span{color:#d91f36}.hero p{max-width:690px;margin:0 auto 25px;color:var(--muted);font-size:1.12rem}
-    .tagline{display:inline-block;background:var(--navy);color:white;padding:10px 22px;border-radius:30px;font-weight:700}
-    main{max-width:1100px;margin:auto;padding:42px 6% 60px}
-    .section-title{text-align:center;margin:0 0 8px;color:var(--navy);font-size:2rem}
-    .intro{text-align:center;color:var(--muted);margin:0 auto 28px;max-width:650px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
-    .card{background:white;border-radius:17px;padding:23px;box-shadow:0 7px 22px #12356b12;border:1px solid #e2eaf8}
-    .emoji{font-size:2rem}.card h3{margin:10px 0 5px;color:var(--navy)}.card p{margin:0;color:var(--muted)}
-    .notice{margin-top:28px;background:#fff8df;border-left:5px solid var(--gold);padding:16px 18px;border-radius:10px;color:#574719}
-    footer{text-align:center;background:#071f55;color:#e8efff;padding:25px 6%}footer p{margin:4px}
-    @media(max-width:600px){header{justify-content:center;text-align:center}nav{justify-content:center}.hero{padding-top:45px}}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ethio A+ Tutorial — learning resources for university freshman and remedial students.">
+<title>Ethio A+ Tutorial</title>
+<style>
+:root{--navy:#082c78;--blue:#1457c5;--gold:#ffca28;--ink:#15264a;--muted:#64708a;--paper:#f4f8ff;--line:#e1e9f6;--green:#16834a}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55}
+header{background:linear-gradient(125deg,#06245f,#1769cf);color:#fff;padding:16px 6%;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.brand{font-size:1.35rem;font-weight:800}.brand span{color:var(--gold)}nav{display:flex;gap:14px;flex-wrap:wrap}nav a{color:#fff;text-decoration:none;font-weight:700;font-size:.92rem}
+button,.btn{border:0;border-radius:10px;padding:11px 16px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block}
+.primary{background:var(--blue);color:white}.gold{background:var(--gold);color:#17264a}.outline{background:white;color:var(--navy);border:1px solid var(--line)}
+.hero{padding:55px 6%;text-align:center;background:linear-gradient(135deg,#eaf3ff,#fff)}.hero h1{font-size:clamp(2rem,6vw,3.7rem);line-height:1.1;margin:0 0 14px;color:var(--navy)}.hero h1 span{color:#d91f36}.hero p{max-width:680px;margin:0 auto 22px;color:var(--muted);font-size:1.08rem}
+main{max-width:1100px;margin:auto;padding:35px 6% 60px}.section-title{text-align:center;color:var(--navy);font-size:1.8rem;margin:0 0 7px}.intro{text-align:center;color:var(--muted);max-width:680px;margin:0 auto 25px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}.card{background:white;border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:0 7px 22px #12356b0c}.card h3{margin:8px 0 5px;color:var(--navy)}.card p{margin:0;color:var(--muted)}.emoji{font-size:1.9rem}
+.panel{background:white;border:1px solid var(--line);border-radius:16px;padding:22px;margin:22px 0;box-shadow:0 7px 22px #12356b0c}.hidden{display:none!important}
+.form-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:13px}label{display:block;font-weight:700;font-size:.9rem;margin-bottom:5px}input,select{width:100%;padding:12px;border:1px solid #cbd7e9;border-radius:9px;font:inherit;background:#fff;color:var(--ink)}input:focus,select:focus{outline:2px solid #9fc2ff;border-color:var(--blue)}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.notice{background:#fff8df;border-left:5px solid var(--gold);padding:13px 15px;border-radius:9px;color:#574719;margin-top:18px;font-size:.92rem}
+.status{padding:10px 13px;border-radius:9px;background:#eaf7ef;color:#17643a;margin:12px 0}.muted{color:var(--muted)}.plan{border:2px solid var(--line)}.plan.featured{border-color:var(--blue)}.price{font-size:1.7rem;font-weight:800;color:var(--navy)}
+.dashboard-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.pill{display:inline-block;padding:5px 10px;border-radius:20px;background:#eaf1ff;color:var(--navy);font-size:.82rem;font-weight:700}
+footer{text-align:center;background:#071f55;color:#e8efff;padding:24px 6%}footer p{margin:4px}
+@media(max-width:600px){header{justify-content:center;text-align:center}nav{justify-content:center}.hero{padding-top:42px}.panel{padding:17px}}
+</style>
 </head>
 <body>
-  <header>
-    <div class="brand">Ethio <span>A+</span> Tutorial</div>
-    <nav aria-label="Main navigation">
-      <a href="#materials">Study Materials</a><a href="#practice">Practice</a><a href="#about">About</a>
-    </nav>
-  </header>
-  <section class="hero">
-    <h1>Learn. Practice. <span>Succeed.</span></h1>
-    <p>Your learning space for study materials, PDF books, video lessons, practice questions and useful tips.</p>
-    <div class="tagline">Learn Today • Lead Tomorrow!</div>
-  </section>
-  <main>
-    <section id="materials">
-      <h2 class="section-title">Explore Learning Resources</h2>
-      <p class="intro">Choose a learning section and keep building your knowledge, one step at a time.</p>
-      <div class="grid">
-        <article class="card"><div class="emoji">📚</div><h3>Study Materials</h3><p>Organized notes and learning resources for your subjects.</p></article>
-        <article class="card"><div class="emoji">📄</div><h3>PDF Books</h3><p>PDF learning resources will be added here.</p></article>
-        <article class="card"><div class="emoji">▶️</div><h3>Video Lessons</h3><p>Watch lessons and review important topics.</p></article>
-        <article class="card" id="practice"><div class="emoji">📝</div><h3>Practice Questions</h3><p>Test your understanding with questions and quizzes.</p></article>
-        <article class="card"><div class="emoji">💡</div><h3>Useful Tips</h3><p>Find study strategies and helpful learning advice.</p></article>
-        <article class="card"><div class="emoji">🏆</div><h3>Success Tips</h3><p>Set goals, practice regularly and celebrate progress.</p></article>
+<header>
+  <div class="brand">Ethio <span>A+</span> Tutorial</div>
+  <nav aria-label="Main navigation">
+    <a href="#materials">Materials</a><a href="#plans">Membership</a><a href="#about">About</a>
+    <a href="#account">Student account</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Learn. Practice. <span>Succeed.</span></h1>
+  <p>Your learning space for University Freshman and Remedial students. Find study materials, PDF books, video lessons and practice questions.</p>
+  <span class="pill">Learn Today • Lead Tomorrow!</span>
+  <div class="actions" style="justify-content:center">
+    <a class="btn primary" href="#account">Create student account</a>
+    <a class="btn outline" href="#materials">Explore materials</a>
+  </div>
+</section>
+
+<main>
+  <section id="account" class="panel">
+    <h2 class="section-title">Student Account</h2>
+    <p class="intro">Create an account or sign in to view the student dashboard demo.</p>
+    <div id="authArea">
+      <div class="actions">
+        <button class="primary" type="button" id="showRegister">Register</button>
+        <button class="outline" type="button" id="showLogin">Login</button>
       </div>
-      <div class="notice"><strong>Website setup:</strong> This is your starter website. Add your own PDF files, lesson links, quizzes and contact details before sharing it with students.</div>
-    </section>
-    <section id="about" style="padding-top:38px;text-align:center">
-      <h2 class="section-title">About Ethio A+ Tutorial</h2>
-      <p class="intro">Ethio A+ Tutorial aims to make learning resources easier to find and use. Keep learning, keep practicing and keep improving.</p>
-    </section>
-  </main>
-  <footer><p><strong>Ethio A+ Tutorial</strong></p><p>Learn Today • Lead Tomorrow!</p></footer>
+      <form id="registerForm">
+        <h3>Create your account</h3>
+        <div class="form-grid">
+          <div><label for="fullName">Full name</label><input id="fullName" required autocomplete="name" placeholder="Your full name"></div>
+          <div><label for="email">Email address</label><input id="email" type="email" required autocomplete="email" placeholder="name@example.com"></div>
+          <div><label for="phone">Phone number</label><input id="phone" type="tel" required autocomplete="tel" placeholder="+251..."></div>
+          <div><label for="level">Education level</label><select id="level" required><option value="">Choose one</option><option>University Freshman</option><option>Remedial</option></select></div>
+          <div><label for="university">University (if applicable)</label><input id="university" placeholder="University name"></div>
+          <div><label for="department">Department / Stream</label><input id="department" placeholder="Your department or stream"></div>
+          <div><label for="password">Create password</label><input id="password" type="password" minlength="8" required autocomplete="new-password" placeholder="At least 8 characters"></div>
+        </div>
+        <div class="actions"><button class="primary" type="submit">Create account</button></div>
+      </form>
+      <form id="loginForm" class="hidden">
+        <h3>Student login</h3>
+        <div class="form-grid">
+          <div><label for="loginId">Email or phone number</label><input id="loginId" required placeholder="Email or phone"></div>
+          <div><label for="loginPassword">Password</label><input id="loginPassword" type="password" required placeholder="Your password"></div>
+        </div>
+        <div class="actions"><button class="primary" type="submit">Sign in to demo</button></div>
+      </form>
+      <div id="authMessage" aria-live="polite"></div>
+    </div>
+    <div id="dashboard" class="hidden">
+      <div class="dashboard-head"><div><h3 id="welcomeName">Welcome!</h3><p class="muted" id="studentMeta"></p></div><button class="outline" id="logout" type="button">Log out</button></div>
+      <div class="grid">
+        <article class="card"><div class="emoji">📚</div><h3>My Materials</h3><p>Open available notes and study resources.</p></article>
+        <article class="card"><div class="emoji">▶️</div><h3>Video Lessons</h3><p>Review lessons and important topics.</p></article>
+        <article class="card"><div class="emoji">📝</div><h3>My Exams</h3><p>Practice questions and mock exams.</p></article>
+        <article class="card"><div class="emoji">⭐</div><h3>Membership</h3><p id="memberStatus">Free plan</p><a href="#plans">View plans</a></article>
+      </div>
+    </div>
+    <div class="notice"><strong>Demo notice:</strong> This first version is a visual prototype. It does not securely create real accounts, store passwords, verify identity or activate paid memberships. A secure backend must be connected before public student registration or payments.</div>
+  </section>
+
+  <section id="materials">
+    <h2 class="section-title">Explore Learning Resources</h2>
+    <p class="intro">Choose a learning section and keep building your knowledge, one step at a time.</p>
+    <div class="grid">
+      <article class="card"><div class="emoji">📚</div><h3>Study Materials</h3><p>Organized notes for Freshman and Remedial subjects.</p></article>
+      <article class="card"><div class="emoji">📄</div><h3>PDF Books</h3><p>Learning resources and downloadable study files.</p></article>
+      <article class="card"><div class="emoji">▶️</div><h3>Video Lessons</h3><p>Watch lessons and review important topics.</p></article>
+      <article class="card"><div class="emoji">📝</div><h3>Practice Questions</h3><p>Test your understanding with questions and quizzes.</p></article>
+      <article class="card"><div class="emoji">💡</div><h3>Useful Tips</h3><p>Study strategies and helpful learning advice.</p></article>
+      <article class="card"><div class="emoji">🏆</div><h3>Success Tips</h3><p>Set goals, practice regularly and celebrate progress.</p></article>
+    </div>
+  </section>
+
+  <section id="plans" style="padding-top:38px">
+    <h2 class="section-title">Choose Your Membership</h2>
+    <p class="intro">Start free or choose a Premium subscription. Prices can be added after they are decided.</p>
+    <div class="grid">
+      <article class="card plan"><span class="pill">FREE</span><h3>Free Student</h3><div class="price">0 ETB</div><p>Selected notes, selected videos and basic practice questions.</p></article>
+      <article class="card plan featured"><span class="pill">MONTHLY</span><h3>Premium Monthly</h3><div class="price">Price to be set</div><p>Premium notes, video lessons, full exams and additional learning resources.</p></article>
+      <article class="card plan"><span class="pill">YEARLY</span><h3>Premium Yearly</h3><div class="price">Price to be set</div><p>Premium access for a yearly subscription period.</p></article>
+    </div>
+    <div class="panel">
+      <h3>Premium payment methods</h3>
+      <p class="muted">Planned payment options: Telebirr, Commercial Bank of Ethiopia (CBE), and Bank of Abyssinia (BOA).</p>
+      <p class="muted">Payment processing and verification will be connected securely in a later development step. Do not send money using this demo page.</p>
+    </div>
+  </section>
+
+  <section id="about" style="padding-top:25px;text-align:center">
+    <h2 class="section-title">About Ethio A+ Tutorial</h2>
+    <p class="intro">Ethio A+ Tutorial aims to make learning resources easier to find and use for University Freshman and Remedial students.</p>
+  </section>
+</main>
+<footer><p><strong>Ethio A+ Tutorial</strong></p><p>Learn Today • Lead Tomorrow!</p></footer>
+
+<script>
+const registerForm=document.getElementById('registerForm');
+const loginForm=document.getElementById('loginForm');
+const authMessage=document.getElementById('authMessage');
+const dashboard=document.getElementById('dashboard');
+const authArea=document.getElementById('authArea');
+
+document.getElementById('showRegister').addEventListener('click',()=>{
+  registerForm.classList.remove('hidden');loginForm.classList.add('hidden');authMessage.textContent='';
+});
+document.getElementById('showLogin').addEventListener('click',()=>{
+  loginForm.classList.remove('hidden');registerForm.classList.add('hidden');authMessage.textContent='';
+});
+
+function showDemoDashboard(name,level){
+  authArea.classList.add('hidden');dashboard.classList.remove('hidden');
+  document.getElementById('welcomeName').textContent='Welcome, '+name+'!';
+  document.getElementById('studentMeta').textContent=level+' • Demo account • Free plan';
+  document.getElementById('memberStatus').textContent='Free plan — demo';
+  dashboard.scrollIntoView({behavior:'smooth',block:'start'});
+}
+registerForm.addEventListener('submit',event=>{
+  event.preventDefault();
+  const name=document.getElementById('fullName').value.trim();
+  const level=document.getElementById('level').value;
+  if(!name||!level)return;
+  showDemoDashboard(name,level);
+});
+loginForm.addEventListener('submit',event=>{
+  event.preventDefault();
+  const identity=document.getElementById('loginId').value.trim();
+  if(!identity)return;
+  showDemoDashboard(identity,'Student');
+});
+document.getElementById('logout').addEventListener('click',()=>{
+  dashboard.classList.add('hidden');authArea.classList.remove('hidden');
+  registerForm.reset();loginForm.reset();
+  registerForm.classList.remove('hidden');loginForm.classList.add('hidden');
+  authMessage.textContent='You have left the demo dashboard.';
+  document.getElementById('account').scrollIntoView({behavior:'smooth'});
+});
+</script>
 </body>
 </html>
